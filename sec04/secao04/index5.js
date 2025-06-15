@@ -1,0 +1,60 @@
+
+            //for
+            for(var i = 0; i <= 10; i++){
+                console.log(i);
+            }
+            
+            //while
+            var numero = 20;
+
+            while(numero <= 10){
+                console.log(numero);
+                numero++;
+            }
+
+            //do-while
+            var cont = 10;
+
+            do{
+                console.log('Imprime o valor de cont: ' + cont);
+                cont++;
+            }while(cont <= 5);
+
+            const nomes = ['Whinds', 'Freeway', 'Teste', 'Maria'];
+
+
+            // map
+            nomes.map(function(nome, i) {
+                console.log('[map]', nome, i);
+            });
+
+            // forEach
+            nomes.forEach(function(nome, i) {
+                console.log('[forEach]', nome, i);
+            });
+
+            // for
+            for(let i = 0; i < nomes.length; i = i + 1 ) {
+                console.log('[for]', nomes[i]);
+            }
+
+            const retornoMap = nomes.map((nomeAtual) => {
+                console.log(nomeAtual);
+            
+                return nomeAtual.toUpperCase();
+            })
+            console.log(retornoMap) // ['WHINDS', 'FREEWAY', 'TESTE', 'MARIA']
+
+            const retornoForEach = nomes.forEach((nomeAtual) => {
+                console.log(nomeAtual);
+                return nomeAtual;                
+            })
+
+            console.log(`não dá pra usar assim, gera: ${retornoForEach}`);
+
+
+
+
+
+
+
