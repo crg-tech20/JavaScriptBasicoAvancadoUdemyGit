@@ -54,7 +54,11 @@ var ano = d.getFullYear();
 var hora = d.getHours();
 var minuto = d.getMinutes();
 var minutos = parseInt(minuto);
-var data_string = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minuto;
+//var minuto0 = minuto;
+if(minuto < 10){
+    var minuto0 = ('0'+minutos);
+} else{minuto0 = minutos};
+var data_string = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minuto0;
 var data_string = data_string.toString();
 console.log('Data Montada: '+data_string);
 console.log(`Data Montada template string: ${data_string}`)
