@@ -15,7 +15,7 @@
  * // TODO - numbers.forEach(myFunctionTeste);
  * // TODO - function myFunctionTeste(item, index, arr) {}
  * 
- * 
+ * // TODO - for i sem passagem de argumento, usando o length ou somente arguments
  */
 const cursos = [
     'Programação para Leigos',
@@ -255,7 +255,31 @@ for(let value of iterable){
     console.log(value);
 }
 
+// for i sem passagem de argumento, usando o length ou somente arguments
 
+function somar1(){
+    let soma = 0;
+    for(let i = 0; i < arguments.length; i++){  
+        // TODO - arguments é passado mesmo sem entrada de parametros
+        soma += arguments[i];  // Pode ter a quantidade de parametros variáveis
+    }
+    console.log(arguments); // Resp: Arguments] { '0': 2, '1': 4, '2': 6, '3': 8, '4': 12 }
+    return soma;
+}
+
+
+// console.log(somar1()); // 0
+// console.log(somar1(2)); // 2
+// console.log(somar1(2, 5)); // 7
+// console.log(somar1(5, 3, 9)); // 17
+console.log(somar1(2, 4, 6, 8, 12)); // 32 // Resp: Arguments] { '0': 2, '1': 4, '2': 6, '3': 8, '4': 12 }
+
+// TODO  mesmo estando num1 e num2 na função, eles são acessado via arguments
+function imprime_valores(num1, num2){ 
+    for(let i in arguments){  // OBS: usando o in eu não necessito do arguments.length, para ver o tamanho
+        console.log(arguments[i]);
+    }
+}
 
 
 
