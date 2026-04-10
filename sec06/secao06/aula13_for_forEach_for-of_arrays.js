@@ -15,7 +15,7 @@
  * // TODO - numbers.forEach(myFunctionTeste);
  * // TODO - function myFunctionTeste(item, index, arr) {}
  * 
- * // TODO - for i sem passagem de argumento, usando o length ou somente arguments
+ * // TODO -  for i sem passagem de argumento, usando o length ou somente arguments
  */
 const cursos = [
     'Programação para Leigos',
