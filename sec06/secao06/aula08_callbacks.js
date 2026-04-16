@@ -56,14 +56,14 @@ for(let p of precos){  // for ... of   => loop pelos valores
 console.log(menores);
 
 
-// Forma 1 
+// TODO  Forma 1 
 // menores = precos.filter(function(preco){
 //     return preco < 50;
 // });
 
 // console.log(menores);
 
-// Forma 2
+// TODO  Forma 2
 
 menores = precos.filter(preco => preco < 50);
 
