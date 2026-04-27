@@ -82,8 +82,13 @@ var arrayMarcas = ['Ford', 'BMW', 'Fiat', 'Audi', 'Volkswagen'];
 arrayMarcas.forEach((marca, indice) => {
     console.log("A marca " + marca + " corresponde ao índice: " + indice);
     if (marca === 'BMW'){
-        let itemExcluido = arrayMarcas.shift();
-        console.log("Excluímos o elemento " + itemExcluido);
+        //let itemExcluido = arrayMarcas.shift(); //remove o primeiro elemento do array, não necessariamento o que esta no loop
+        let itemExcluido = arrayMarcas.indexOf(marca);
+        let valorExcluido = marca;
+        //let valor_item_excluido = arrayMarcas.valueOf(arrayMarcas.indexOf(marca));
+        arrayMarcas.splice(itemExcluido,1);
+        //arrayMarcas.shift();
+        console.log("Excluímos o elemento " + itemExcluido + " que contém o valor = " +valorExcluido);
     }
 });
 
