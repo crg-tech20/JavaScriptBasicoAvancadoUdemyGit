@@ -37,18 +37,18 @@ function apresentar(curso, indice){
 // Usando for novo
 for(let p in precos){  // for ... in  => loop pelas keys
     if(precos[p] < 50){
-        menores.push(precos[p]);
+        menores.push(precos[p]); // coloca em menores os preços menores que 50
     }
 }
 
 for(let p of precos){  // for ... of   => loop pelos valores
-    console.log(p);
+    console.log(p); // imprime os preços
 }
 
 // Usando for antigo
 for(let i = 0; i < precos.length; i++){
     if(precos[i] < 50){
-        menores.push(precos[i]);
+        menores.push(precos[i]);  // coloca em menores os preços menores que 50, igual ao de cima, somente com for normal antigo
     }
 }
 
