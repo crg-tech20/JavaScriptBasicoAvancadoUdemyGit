@@ -52,8 +52,7 @@ for(let i = 0; i < precos.length; i++){
     }
 }
 
-console.log(menores);
-
+console.log(menores); // imprime os menores []
 
 ////////////// TODO - foreach e Arrow function //////////////
 console.log('\n//////////////foreach e Arrow function //////////////');
