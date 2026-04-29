@@ -99,6 +99,7 @@ const programa = {
     }
 }
 
+console.table(programa);
 console.log(programa.fabricante.filiais[0].cidade);
 console.table(programa.fabricante.filiais);
 //console.table(programa.fabricante);
